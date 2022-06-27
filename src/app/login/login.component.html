@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Connexion</h1>
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText [(ngModel)]="email" />
+    <label for="float-input">Email</label>
+  </span>
+  <span class="p-float-label">
+    <p-password [(ngModel)]="password" [feedback]="false"></p-password>
+    <label for="float-input" type="password">Password</label>
+  </span>
+  <p-button label="Connexion" (click)="submit()"></p-button>
+</div>
