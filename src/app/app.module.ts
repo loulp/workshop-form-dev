@@ -13,6 +13,7 @@ import { SigningViewComponent } from './signing-view/signing-view.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
+import { StudentListItemComponent } from './unit-detail/student-list-item/student-list-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PasswordModule } from 'primeng/password';
     UnitBoardComponent,
     UnitDetailComponent,
     SigningViewComponent,
+    StudentListItemComponent,
   ],
   imports: [
     BrowserModule,
