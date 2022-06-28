@@ -15,15 +15,11 @@ import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { StudentListItemComponent } from './unit-detail/student-list-item/student-list-item.component';
 
+import { StoreModule } from '@ngrx/store';
+import { authReducer } from '../shared/store/reducers/auth.reducer';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    UnitBoardComponent,
-    UnitDetailComponent,
-    SigningViewComponent,
-    StudentListItemComponent,
-  ],
+  declarations: [AppComponent, LoginComponent, UnitBoardComponent, UnitDetailComponent, SigningViewComponent, StudentListItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,6 +27,7 @@ import { StudentListItemComponent } from './unit-detail/student-list-item/studen
     InputTextModule,
     FormsModule,
     PasswordModule,
+    StoreModule.forRoot({ isLog: authReducer }, {}),
   ],
   providers: [],
   bootstrap: [AppComponent],
