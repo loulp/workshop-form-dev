@@ -4,6 +4,7 @@ import { AuthGuard } from 'src/shared/guards/auth.guard';
 import { LoginComponent } from './login/login.component';
 import { UnitBoardComponent } from './unit-board/unit-board.component';
 import { UnitDetailComponent } from './unit-detail/unit-detail.component';
+import { QrCodeViewComponent } from './qr-code-view/qr-code-view.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,11 @@ const routes: Routes = [
   {
     path: 'unitDetail',
     component: UnitDetailComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'qrCode',
+    component: QrCodeViewComponent,
     canActivate: [AuthGuard],
   },
   {
