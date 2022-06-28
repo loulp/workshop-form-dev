@@ -16,6 +16,9 @@ import { PasswordModule } from 'primeng/password';
 import { StudentListItemComponent } from './unit-detail/student-list-item/student-list-item.component';
 import { QrCodeViewComponent } from './qr-code-view/qr-code-view.component';
 
+import { StoreModule } from '@ngrx/store';
+import { authReducer } from '../shared/store/reducers/auth.reducer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +36,7 @@ import { QrCodeViewComponent } from './qr-code-view/qr-code-view.component';
     InputTextModule,
     FormsModule,
     PasswordModule,
+    StoreModule.forRoot({ isLog: authReducer }, {}),
   ],
   providers: [],
   bootstrap: [AppComponent],
