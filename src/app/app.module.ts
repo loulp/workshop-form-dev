@@ -14,6 +14,7 @@ import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { StudentListItemComponent } from './unit-detail/student-list-item/student-list-item.component';
+import { QrCodeViewComponent } from './qr-code-view/qr-code-view.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { StudentListItemComponent } from './unit-detail/student-list-item/studen
     UnitDetailComponent,
     SigningViewComponent,
     StudentListItemComponent,
+    QrCodeViewComponent,
   ],
   imports: [
     BrowserModule,
