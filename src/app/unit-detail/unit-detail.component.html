@@ -1,1 +1,19 @@
-<p>unit-detail works!</p>
+<div class="container">
+    <ul>
+        <li *ngFor="let student of studentList">
+            <div class="students">
+                <div class="student">
+                    <img class="img" [src]="student.imgPath">
+                    <div class="noms">
+                        <p class="nom">{{ student.lastname }}</p>
+                        <p class="prenom">{{ student.firstname }}</p>
+                    </div>
+                    <div class="icons">
+                        <p class="pi pi-times-circle icon" style="font-size: 1.5rem"></p>
+                        <p class="pi pi-pencil icon" style="font-size: 1.5rem"></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>                       

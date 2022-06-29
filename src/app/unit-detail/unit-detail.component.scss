@@ -1,0 +1,65 @@
+.students{
+    height: 142px;
+    width: 33%;
+    border-radius: 0px;
+    float: left;
+    background-color: #3E92CF;
+    margin-top: 20px;
+}
+
+.container{
+    background-color: #3E92CF;
+    height: 100%;
+    width: 100%;
+    margin-left: 0%;
+}
+
+.student{
+    background-color: #d6d5d5;
+    height: 100%;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    margin-left: 10%;
+}
+
+.img{
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin-top: 2%;
+}
+
+.noms{
+    padding-left: 8%;
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.prenom, .nom{
+    color: #3E92CF;
+    font-size: 1.2em;
+    margin-top: 25%;
+}
+
+.icons{
+    float: right;
+   // background-color: aquamarine;
+    width: 25%;
+    height: 100%;
+}
+
+.icon{
+    margin-top: 10%;
+    padding-right: 25px;
+}
+
+li {
+    list-style-type:none;
+}
+
+ul {
+    margin-right: 7%;
+}
