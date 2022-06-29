@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnitDetailComponent implements OnInit {
 
+  studentList = [
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+    { firstname: 'Prénom', lastname: 'Nom', imgPath: '/assets/img/Pdp.png' },
+  ];
+  
   constructor() { }
 
   ngOnInit(): void {

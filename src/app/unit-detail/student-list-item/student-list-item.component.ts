@@ -6,20 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./student-list-item.component.scss'],
 })
 export class StudentListItemComponent implements OnInit {
-  studentList = [
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-    { firstname: 'Prénom', lastname: 'Nom', comment: '' },
-  ];
+  
 
   constructor() {}
 
