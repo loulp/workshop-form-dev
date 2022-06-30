@@ -49,4 +49,9 @@ export class UnitDetailComponent implements OnInit {
   sendEmail() {
     this.messageService.add({ severity: 'success', summary: 'Emails envoyés', detail: 'Les emails ont été correctement envoyés' });
   }
+
+  endUnit() {
+    console.log('end');
+    
+  }
 }

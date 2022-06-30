@@ -26,11 +26,16 @@
         display: flex;
         flex-direction: column;
       }
+
+      @media screen and (max-width: 660px) {
+        width: 60%;
+      }
     }
   }
 
   .isOpenContainer {
     margin-left: 3%;
+    width: 75%;
   }
 }
 

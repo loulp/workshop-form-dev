@@ -5,10 +5,10 @@
     <div class="background">
       <div class="row">
         <div class="col-md-12">
-          <div style="display:flex; justify-content:center" class="unit">
+          <!-- <div style="display:flex; justify-content:center" class="unit">
             <i style="font-size: 5rem;" class="pi pi-plus-circle"></i>
-          </div>
-          <div class="unit" *ngFor="let unit of units">
+          </div> -->
+          <div class="unit" *ngFor="let unit of units" (click)="toUnitDetail()">
             <div class="col-left">
               <div class="unit-name">{{unit.name}}</div>
               <div class="unit-description">{{unit.description}}</div>
