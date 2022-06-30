@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { UnitBoardComponent } from './unit-board/unit-board.component';
@@ -15,14 +14,11 @@ import { SigningViewComponent } from './signing-view/signing-view.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
-<<<<<<< HEAD
 import { ToastModule } from 'primeng/toast';
 import { CardModule } from 'primeng/card';
-=======
 import { TabViewModule } from 'primeng/tabview';
-import {CalendarModule} from 'primeng/calendar';
+import { CalendarModule } from 'primeng/calendar';
 import { FullCalendarModule } from '@fullcalendar/angular';
->>>>>>> ajout du calendar et des tab view
 import { StudentListItemComponent } from './unit-detail/student-list-item/student-list-item.component';
 import { QrCodeViewComponent } from './qr-code-view/qr-code-view.component';
 
@@ -48,16 +44,13 @@ import { HeaderComponent } from './components/header/header.component';
     InputTextModule,
     FormsModule,
     PasswordModule,
-<<<<<<< HEAD
     CardModule,
     ToastModule,
     BrowserAnimationsModule,
     StoreModule.forRoot({ isLog: authReducer }, {}),
-=======
     TabViewModule,
     CalendarModule,
     FullCalendarModule,
->>>>>>> ajout du calendar et des tab view
   ],
   providers: [],
   bootstrap: [AppComponent],
