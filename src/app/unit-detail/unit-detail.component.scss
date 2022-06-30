@@ -3,7 +3,6 @@
     width: 33%;
     border-radius: 0px;
     float: left;
-    background-color: #3E92CF;
     margin-top: 20px;
 }
 
@@ -54,6 +53,7 @@
 .icon{
     margin-top: 10%;
     padding-right: 25px;
+    cursor: pointer;
 }
 
 li {
@@ -61,5 +61,6 @@ li {
 }
 
 ul {
+    margin: auto;
     margin-right: 7%;
 }
