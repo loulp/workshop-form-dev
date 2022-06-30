@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
   // Declaration de variables
   email: string = '';
   password: string = '';
+  logError = false;
 
   constructor(private router: Router, private store: Store<{ isLog: boolean }>) {}
 
@@ -24,8 +25,10 @@ export class LoginComponent implements OnInit {
   submit() {
     if (this.email === 'email' && this.password === 'pass') {
       this.store.dispatch(login({ email: this.email, password: this.password }));
-      
+
       this.router.navigateByUrl('/unitBoard');
+    } else {
+      this.logError = true
     }
   }
 

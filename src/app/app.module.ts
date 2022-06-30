@@ -13,6 +13,7 @@ import { SigningViewComponent } from './signing-view/signing-view.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
+import {CardModule} from 'primeng/card';
 import { StudentListItemComponent } from './unit-detail/student-list-item/student-list-item.component';
 import { QrCodeViewComponent } from './qr-code-view/qr-code-view.component';
 
@@ -36,6 +37,7 @@ import { authReducer } from '../shared/store/reducers/auth.reducer';
     InputTextModule,
     FormsModule,
     PasswordModule,
+    CardModule,
     StoreModule.forRoot({ isLog: authReducer }, {}),
   ],
   providers: [],
