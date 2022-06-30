@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
 
   // Declaration de fonctions
   submit() {
-    if (this.email === 'email' && this.password === 'pass') {
+    if (this.email === 'email@email.com' && this.password === 'password') {
       this.store.dispatch(login({ email: this.email, password: this.password }));
 
       this.router.navigateByUrl('/unitBoard');

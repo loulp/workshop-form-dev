@@ -1,19 +1,54 @@
-.students{
+.unitInfoContainer {
+  font-family: sans-serif;
+
+  .unitInfo {
+    width: 100%;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 5px 6px #00000046;
+
+    h2 {
+      margin-left: 3%;
+    }
+    .signingChoice {
+      margin-right: 3%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 25%;
+
+      .attendance {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .isOpenContainer {
+    margin-left: 3%;
+  }
+}
+
+.container {
+  background-color: #3e92cf;
+  height: 100%;
+  width: 100%;
+  margin-left: 0%;
+
+  .students {
     height: 142px;
     width: 33%;
     border-radius: 0px;
     float: left;
     margin-top: 20px;
-}
+  }
 
-.container{
-    background-color: #3E92CF;
-    height: 100%;
-    width: 100%;
-    margin-left: 0%;
-}
-
-.student{
+  .student {
     background-color: #d6d5d5;
     height: 100%;
     width: 80%;
@@ -22,45 +57,47 @@
     padding-bottom: 5%;
     padding-top: 3%;
     margin-left: 10%;
-}
+  }
 
-.img{
+  .img {
     float: left;
     height: 80px;
     width: 80px;
     margin-top: 2%;
-}
+  }
 
-.noms{
+  .noms {
     padding-left: 8%;
     display: inline-block;
-    vertical-align: top; 
-}
+    vertical-align: top;
+  }
 
-.prenom, .nom{
-    color: #3E92CF;
+  .prenom,
+  .nom {
+    color: #3e92cf;
     font-size: 1.2em;
     margin-top: 25%;
-}
+  }
 
-.icons{
+  .icons {
     float: right;
-   // background-color: aquamarine;
+    // background-color: aquamarine;
     width: 25%;
     height: 100%;
-}
+  }
 
-.icon{
+  .icon {
     margin-top: 10%;
     padding-right: 25px;
     cursor: pointer;
-}
+  }
 
-li {
-    list-style-type:none;
-}
+  li {
+    list-style-type: none;
+  }
 
-ul {
+  ul {
     margin: auto;
     margin-right: 7%;
+  }
 }

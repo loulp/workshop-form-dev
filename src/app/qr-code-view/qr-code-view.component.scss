@@ -1,5 +1,5 @@
 .qr-code-page {
-  height: calc(100vh - 80px);
+  // height: calc(100vh - 80px);
 
   & h1 {
     text-align: center;
@@ -8,6 +8,12 @@
     font-weight: 800;
     font-family: sans-serif;
     text-transform: uppercase;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    text-align: center;
+    margin: 3% auto;
   }
 }
 
