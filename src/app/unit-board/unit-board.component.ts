@@ -1,11 +1,48 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CalendarOptions } from '@fullcalendar/angular';
+import { Calendar } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import timeGridPlugin from '@fullcalendar/timegrid';
 @Component({
   selector: 'app-unit-board',
   templateUrl: './unit-board.component.html',
   styleUrls: ['./unit-board.component.scss']
 })
 export class UnitBoardComponent implements OnInit {
+
+  calendarOptions: CalendarOptions = {
+    initialView: 'timeGridDay',
+    plugins: [timeGridPlugin, interactionPlugin],
+    weekends: false,
+    //create same events created but for days later
+    events: [
+      {
+        title: 'Unit-Board 1',
+        start: '2022-06-29T09:00:00',
+        end: '2022-06-29T12:30:00',
+      },
+      {
+        title: 'Unit-Board 2',
+        start: '2022-06-29T13:30:00',
+        end: '2022-06-29T17:00:00',
+      },
+      {
+        title: 'Unit-Board 3',
+        start: '2022-06-30T09:00:00',
+        end: '2022-06-30T12:30:00',
+      },
+      {
+        title: 'Unit-Board 4',
+        start: '2022-06-30T13:30:00',
+        end: '2022-06-30T17:00:00',
+      },
+    ]
+  }
+
+
+
   //init data for 5 unit board with name description and status
   units = [
     {
@@ -34,9 +71,16 @@ export class UnitBoardComponent implements OnInit {
       status: 'Finished'
     }
   ];
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor() {
+    const name = Calendar.name;
   }
+
+  ngOnInit() {
+
+    
+  }
+
+  
 
 }
