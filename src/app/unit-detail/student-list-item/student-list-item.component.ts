@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-student-list-item',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentListItemComponent implements OnInit {
   
+  @Input() item: any[] | undefined;
+
+  cheminImage:any = "assets/img/Pdp.png";
 
   constructor() {}
 
